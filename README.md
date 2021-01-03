@@ -43,7 +43,7 @@ CMake Project Template with generic filenames
 | ========================================================
 ```
 
-# Scripts
+## Scripts
 
 Two scripts are provided for development convenience
 
