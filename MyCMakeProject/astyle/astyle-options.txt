@@ -1,0 +1,51 @@
+# The allman style that uses broken brackets.
+--style=allman
+
+# 4 spaces for indentation
+--indent=spaces=4
+
+# The pointer is aligned next to the type
+# void* ptr;
+--align-pointer=type
+
+# The reference is aligned next to the type
+# Foo& rFoo;
+--align-reference=type
+
+# Indent 'switch' blocks so that the 'case X:' statements are indented in the
+# switch block. The entire case block is indented.
+--indent-switches
+
+# Add brackets to unbracketed one line conditional statements
+# (e.g. 'if', 'for', 'while'...)
+--add-brackets
+
+# Converts tabs into spaces in the non-indentation part of the line.
+--convert-tabs
+
+# The option break-after-logical will cause the logical conditionals to be
+# placed last on the previous line.
+--break-after-logical
+
+# Insert space padding around operators
+--pad-oper
+
+# Insert space padding after paren headers only (e.g. 'if', 'for', 'while'...)
+--pad-header
+
+# Remove extra space padding around parenthesis on the inside and outside.
+--unpad-paren
+
+# No minimal indent. The lines will be aligned with the paren on the preceding line.
+--min-conditional-indent=0
+
+# Indent a C type file. C type files are C, C++, C++/CLI, and Objective-C.
+--mode=c
+
+# Do not retain a backup of the original file. The original file is purged
+# after it is formatted.
+--suffix=none
+
+# Allow processing to continue if there are errors in the "exclude=###" options.
+# It will NOT display the unmatched excludes.
+--ignore-exclude-errors-x
