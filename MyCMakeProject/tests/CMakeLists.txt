@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.6)
 project(unit_tests)
 
+# Set the minimum required cmake version to the included CMakeLists.txt.in file for GTest
+set(gtest_cmake_minimum_required_version ${CMAKE_MINIMUM_REQUIRED_VERSION})
 # Download and unpack googletest at configure time
 configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
 execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
